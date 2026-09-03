@@ -226,19 +226,17 @@ ul {
     height: 100%;
 }
 
-.logo {
-    font-family: var(--font-heading);
+.institution-name {
+    max-width: 245px;
     color: var(--color-text-light);
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.15;
 }
 
-.brand-logo {
-    display: block;
-    width: 268px;
-    height: 118px;
-    object-fit: contain;
+.institution-name:hover {
+    color: var(--color-accent);
 }
 
 .nav-menu {
@@ -930,19 +928,16 @@ ul {
     margin-bottom: 50px;
 }
 
-.footer-logo {
-    margin-bottom: 16px;
-}
-
-.footer-logo .brand-logo {
-    width: 340px;
-    height: 150px;
-}
-
 .footer-brand p {
     margin-bottom: 18px;
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+.footer-institution-name {
+    color: var(--color-text-light);
+    font-size: 1.35rem;
+    margin-bottom: 14px;
 }
 
 .footer-contact-quick {
@@ -1112,10 +1107,9 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .brand-logo,
-    .footer-logo .brand-logo {
-        width: min(268px, 100%);
-        height: 118px;
+    .institution-name {
+        max-width: 190px;
+        font-size: 0.9rem;
     }
 
     .nav-menu, .nav-actions .btn {
