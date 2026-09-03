@@ -40,7 +40,7 @@
     
     /* Layout */
     --max-width: 1200px;
-    --header-height: 76px;
+    --header-height: 120px;
 }
 
 /* ==========================================================================
@@ -214,7 +214,7 @@ ul {
 }
 
 .header.scrolled {
-    height: 68px;
+    height: 108px;
     background-color: var(--color-primary-dark);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -228,22 +228,17 @@ ul {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.55rem;
-    font-weight: 800;
     color: var(--color-text-light);
     display: flex;
     align-items: center;
-    gap: 10px;
-    letter-spacing: -0.5px;
+    gap: 15px;
 }
 
-.logo i {
-    color: var(--color-accent);
-    font-size: 1.7rem;
-}
-
-.logo span {
-    color: var(--color-accent);
+.brand-logo {
+    display: block;
+    width: 268px;
+    height: 118px;
+    object-fit: contain;
 }
 
 .nav-menu {
@@ -939,6 +934,11 @@ ul {
     margin-bottom: 16px;
 }
 
+.footer-logo .brand-logo {
+    width: 340px;
+    height: 150px;
+}
+
 .footer-brand p {
     margin-bottom: 18px;
     font-size: 0.95rem;
@@ -1079,6 +1079,14 @@ ul {
    Responsive Design (Media Queries)
    ========================================================================== */
 @media (max-width: 1024px) {
+    .nav-menu, .nav-actions .btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
     .hero-title {
         font-size: 3.2rem;
     }
@@ -1104,6 +1112,12 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .brand-logo,
+    .footer-logo .brand-logo {
+        width: min(268px, 100%);
+        height: 118px;
+    }
+
     .nav-menu, .nav-actions .btn {
         display: none;
     }

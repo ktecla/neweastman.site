@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Animated Statistics Counter (Intersection Observer)
+    // Animated Department Counter (Intersection Observer)
     const stats = document.querySelectorAll('.stat-number');
     let hasCounted = false;
 
