@@ -915,14 +915,38 @@ ul {
     line-height: 1.6;
 }
 
-.phone-link {
+.phone-link,
+.email-link {
     color: var(--color-primary);
     font-weight: 700;
     transition: color var(--transition-fast);
+    text-decoration: none;
 }
 
-.phone-link:hover {
+.phone-link:hover,
+.email-link:hover {
     color: var(--color-accent);
+}
+
+/* Contact Card Buttons */
+.contact-card .btn {
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-card .btn-small {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(255, 153, 0, 0.35);
+}
+
+.contact-card .btn-small:hover {
+    background: linear-gradient(135deg, var(--color-accent-light) 0%, var(--color-accent) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 153, 0, 0.45);
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .contact-map {
