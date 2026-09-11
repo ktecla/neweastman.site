@@ -227,16 +227,31 @@ ul {
 }
 
 .institution-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     max-width: 245px;
     color: var(--color-text-light);
     font-family: var(--font-heading);
-    font-size: 1.05rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 700;
     line-height: 1.15;
 }
 
 .institution-name:hover {
-    color: var(--color-accent);
+    opacity: 0.9;
+}
+
+.brand-logo {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+.footer-logo {
+    display: block;
+    width: 230px;
+    height: auto;
 }
 
 .nav-menu {
@@ -382,6 +397,14 @@ ul {
     background: linear-gradient(135deg, #FFB340 0%, #FF9900 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.institution-motto {
+    color: var(--color-accent-light);
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
 .hero-subtitle {
@@ -935,8 +958,6 @@ ul {
 }
 
 .footer-institution-name {
-    color: var(--color-text-light);
-    font-size: 1.35rem;
     margin-bottom: 14px;
 }
 
@@ -1108,8 +1129,12 @@ ul {
 
 @media (max-width: 768px) {
     .institution-name {
-        max-width: 190px;
-        font-size: 0.9rem;
+        max-width: 250px;
+        font-size: 0.85rem;
+    }
+
+    .brand-logo {
+        width: 100px;
     }
 
     .nav-menu, .nav-actions .btn {
